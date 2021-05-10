@@ -5,21 +5,35 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <title>Adding a new product</title>
   </head>
   <body>
-    <h1>Input data for the new product</h1>
-    <form>
-      <label for="txtName">Name:</label>
-      <input type="text" id="txtName" value="" /><br />
+    <h1 style="text-align: center">Input data for the new product</h1>
+    <form style="text-align: center">
+      <label for="txtName" style="font-weight: bold">Name:</label>
+      <input type="text" id="txtName" /><br />
 
-      <label for="txtPrice">Price:</label>
+      <label for="txtPrice" style="font-weight: bold">Price:</label>
       <input type="number" id="txtPrice" /><br />
 
-      <label for="txtBrand">Brand:</label>
+      <label for="txtBrand" style="font-weight: bold">Brand:</label>
       <input type="text" id="txtBrand" /><br />
 
-      <input type="submit" id="submit" value="Add product" />
+      <input
+        class="btn btn-success"
+        type="submit"
+        id="submit"
+        value="Add product"
+        style="margin: 10px"
+      />
     </form>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
